@@ -1,0 +1,19 @@
+Host DEPLOY_ENV-nat.pingli.st
+    User                   ubuntu
+    HostName               DEPLOY_ENV-nat.pingli.st
+    ProxyCommand           none
+    StrictHostKeyChecking  no
+    BatchMode              yes
+    PasswordAuthentication no
+    ControlMaster          auto
+    ControlPath            ~/.ssh/mux-%r@%h:%p
+    ControlPersist         8h
+
+Host 10.0.*.*
+    ServerAliveInterval    60
+    TCPKeepAlive           yes
+    ProxyCommand           ssh -F ssh.config -q -A ubuntu@DEPLOY_ENV-nat.pingli.st nc %h %p
+    ControlMaster          auto
+    ControlPath            ~/.ssh/mux-%r@%h:%p
+    ControlPersist         8h
+    User                   core

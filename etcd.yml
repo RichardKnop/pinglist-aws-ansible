@@ -1,0 +1,23 @@
+---
+
+- hosts: "{{ hosts_prefix }}_pinglist_etcd_0"
+  gather_facts: False
+
+  roles:
+    - defunctzombie.coreos-bootstrap
+
+  tasks:
+    - include_vars: "environments/{{ deploy_env }}.yml"
+
+    - name: Render configuration JSON file
+      template:
+        src: "templates/pinglist.json.j2"
+        dest: "/tmp/pinglist.json"
+
+    - name: Load configuration into etcd
+      raw: "etcdctl set /config/pinglist.json < /tmp/pinglist.json"
+
+    - name: Remove the JSON file
+      file:
+        path: "/tmp/pinglist.json"
+        state: "absent"
