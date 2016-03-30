@@ -2,9 +2,11 @@
 
 # Pinglist AWS Ansible
 
+Ansible manifests to configure the Pinglist platform.
+
 # Index
 
-* [Pinglist Ansible](#pinglist-ansible)
+* [Pinglist AWS Ansible](#pinglist-aws-ansible)
 * [Index](#index)
 * [Requirements](#requirements)
   * [Requirements For AWS Provisioning](#requirements-for-aws-provisioning)
