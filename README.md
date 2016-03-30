@@ -1,6 +1,6 @@
 [1]: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair
 
-# Pinglist Ansible
+# Pinglist AWS Ansible
 
 # Index
 
