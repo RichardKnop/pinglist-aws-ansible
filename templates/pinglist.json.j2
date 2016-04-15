@@ -1,44 +1,44 @@
 {
-  "Database": {
-    "Type": "postgres",
-    "Host": "{{ database_host }}",
-    "Port": 5432,
-    "User": "pinglist",
-    "Password": "{{ database_password }}",
-    "DatabaseName": "pinglist",
-    "MaxIdleConns": {{ database_max_idle_conns }},
-    "MaxOpenConns": {{ database_max_open_conns }}
-  },
-  "Oauth": {
-    "AccessTokenLifetime": 3600,
-    "RefreshTokenLifetime": 1209600,
-    "AuthCodeLifetime": 3600
-  },
-  "Session": {
-    "Secret": "{{ session_secret }}",
-    "Path": "/",
-    "MaxAge": 604800,
-    "HTTPOnly": true
-  },
-  "AWS": {
-    "Region": "{{ aws_region }}",
-    "APNSPlatformApplicationARN": "{{ apns_platform_application_arn }}",
-		"GCMPlatformApplicationARN":  "{{ gcm_platform_application_arn }}"
-  },
-  "Facebook": {
-    "AppID": "{{ facebook_app_id }}",
-    "AppSecret": "{{ facebook_app_secret }}"
-  },
-  "Sendgrid": {
-    "APIKey": "{{ sendgrid_api_key }}"
-  },
-  "Stripe": {
-		"SecretKey": "{{ stripe_secret_key }}",
-		"PublishableKey": "{{ stripe_publishable_key }}"
-	},
-  "Web": {
-    "Scheme": "{{ scheme }}",
-    "Host": "{{ host }}"
-  },
-  "IsDevelopment": false
+    "Database": {
+        "Type": "postgres",
+        "Host": "{{ database_host }}",
+        "Port": 5432,
+        "User": "pinglist",
+        "Password": "{{ database_password }}",
+        "DatabaseName": "pinglist",
+        "MaxIdleConns": {{ database_max_idle_conns }},
+        "MaxOpenConns": {{ database_max_open_conns }}
+    },
+    "Oauth": {
+        "AccessTokenLifetime": 3600,
+        "RefreshTokenLifetime": 1209600,
+        "AuthCodeLifetime": 3600
+    },
+    "Session": {
+        "Secret": "{{ session_secret }}",
+        "Path": "/",
+        "MaxAge": 604800,
+        "HTTPOnly": true
+    },
+    "AWS": {
+        "Region": "{{ aws_region }}",
+        "APNSPlatformApplicationARN": "{{ apns_platform_application_arn }}",
+        "GCMPlatformApplicationARN": "{{ gcm_platform_application_arn }}"
+    },
+    "Facebook": {
+        "AppID": "{{ facebook_app_id }}",
+        "AppSecret": "{{ facebook_app_secret }}"
+    },
+    "Sendgrid": {
+        "APIKey": "{{ sendgrid_api_key }}"
+    },
+    "Stripe": {
+        "SecretKey": "{{ stripe_secret_key }}",
+        "PublishableKey": "{{ stripe_publishable_key }}"
+    },
+    "Web": {
+        "Scheme": "{{ scheme }}",
+        "Host": "{{ host }}"
+    },
+    "IsDevelopment": false
 }
