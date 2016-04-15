@@ -2,3 +2,4 @@
 ansible-ec2.cache
 ansible-ec2.index
 ssh.config
+.bash_profile
