@@ -133,8 +133,8 @@ This repository is using `ansible-vault` to secure sensitive information. Secure
 ```
 .
 ├── environments
-│   ├── staging.yml
-│   └── production.yml
+│   ├── stage.yml
+│   └── prod.yml
 │
 └── ...
 ```
