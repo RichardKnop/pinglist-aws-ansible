@@ -47,7 +47,7 @@ Test that the dynamic inventory file is working:
 Render an SSH configuration file, i.e.:
 
 ```
-./render-ssh-config <env-name-prefix>
+./render-ssh-config.sh <env-name-prefix>
 ```
 
 ## Setting Up GPG-encrypted Vault Support
@@ -153,6 +153,7 @@ Required contents for `environments/<env-name-prefix>.yml` (if you don't know th
 database_max_idle_conns: 5
 database_max_open_conns: 5
 database_password: "database_password"
+app_database_password: "app_database_password"
 session_secret: "session_secret"
 facebook_app_id: "facebook_app_id"
 facebook_app_secret: "facebook_app_secret"
