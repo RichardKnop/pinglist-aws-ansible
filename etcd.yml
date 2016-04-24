@@ -9,15 +9,28 @@
   tasks:
     - include_vars: "environments/{{ deploy_env }}.yml"
 
-    - name: Render configuration JSON file
+    - name: Render API configuration JSON file
       template:
         src: "templates/pinglist.json.j2"
         dest: "/tmp/pinglist.json"
 
-    - name: Load configuration into etcd
+    - name: Load API configuration into etcd
       raw: "etcdctl set /config/pinglist.json < /tmp/pinglist.json"
 
-    - name: Remove the JSON file
+    - name: Remove the API configuration JSON file
       file:
         path: "/tmp/pinglist.json"
+        state: "absent"
+
+    - name: Render app configuration JSON file
+      template:
+        src: "templates/pinglist_app.json.j2"
+        dest: "/tmp/pinglist_app.json"
+
+    - name: Load app configuration into etcd
+      raw: "etcdctl set /config/pinglist_app.json < /tmp/pinglist_app.json"
+
+    - name: Remove the app configuration JSON file
+      file:
+        path: "/tmp/pinglist_app.json"
         state: "absent"

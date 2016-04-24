@@ -152,9 +152,12 @@ Required contents for `environments/<env-name-prefix>.yml` (if you don't know th
 ```yml
 database_max_idle_conns: 5
 database_max_open_conns: 5
-database_password: "database_password"
+api_database_password: "database_password"
 app_database_password: "app_database_password"
 session_secret: "session_secret"
+django_secret: "session_secret"
+oauth_client_id: "oauth_client_id"
+oauth_secret: "oauth_secret"
 facebook_app_id: "facebook_app_id"
 facebook_app_secret: "facebook_app_secret"
 apns_platform_application_arn: "apns_platform_application_arn"
@@ -162,8 +165,10 @@ gcm_platform_application_arn: "gcm_platform_application_arn"
 sendgrid_api_key: "sendgrid_api_key"
 stripe_secret_key: "stripe_secret_key"
 stripe_publishable_key: "stripe_publishable_key"
-scheme: "https"
-host: "<env-name-prefix>-api.{{ domain_name }}"
+api_scheme: "https"
+api_host: "<env-name-prefix>-app.{{ domain_name }}"
+app_scheme: "https"
+app_host: "<env-name-prefix>-api.{{ domain_name }}"
 ```
 
 # Provisioning
