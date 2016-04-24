@@ -150,8 +150,8 @@ ansible-vault edit environments/<env-name-prefix>.yml
 Required contents for `environments/<env-name-prefix>.yml` (if you don't know the password):
 
 ```yml
-database_max_idle_conns: 5
 database_max_open_conns: 5
+database_max_idle_conns: 5
 api_database_password: "database_password"
 app_database_password: "app_database_password"
 session_secret: "session_secret"
