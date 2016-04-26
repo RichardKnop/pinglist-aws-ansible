@@ -40,5 +40,5 @@
     "Scheme": "{{ api_scheme }}",
     "Host": "{{ api_host }}"
   },
-  "IsDevelopment": {{ is_development }}
+  "IsDevelopment": {{ is_development | to_json }}
 }
