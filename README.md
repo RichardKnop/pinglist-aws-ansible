@@ -169,6 +169,7 @@ api_scheme: "https"
 api_host: "<env-name-prefix>-app.{{ domain_name }}"
 app_scheme: "https"
 app_host: "<env-name-prefix>-api.{{ domain_name }}"
+is_development: false
 ```
 
 # Provisioning
