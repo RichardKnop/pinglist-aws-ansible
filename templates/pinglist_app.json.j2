@@ -2,30 +2,30 @@
   "Database": {
     "Engine": "django.db.backends.postgresql_psycopg2",
     "Host": "{{ database_host }}",
-		"Port": 5432,
-		"User": "pinglist_app",
-		"Password": "{{ app_database_password }}",
-		"DatabaseName": "pinglist_app"
-	},
-	"Oauth": {
-		"ClientID": "{{ oauth_client_id }}",
-		"Secret": "{{ oauth_secret }}"
-	},
-	"Django": {
-		"Secret": "{{ django_secret }}"
-	},
+    "Port": 5432,
+    "User": "pinglist_app",
+    "Password": "{{ app_database_password }}",
+    "DatabaseName": "pinglist_app"
+  },
+  "Oauth": {
+    "ClientID": "{{ oauth_client_id }}",
+    "Secret": "{{ oauth_secret }}"
+  },
+  "Django": {
+    "Secret": "{{ django_secret }}"
+  },
   "Facebook": {
     "AppID": "{{ facebook_app_id }}",
     "AppSecret": "{{ facebook_app_secret }}"
   },
-	"Stripe": {
+  "Stripe": {
     "PublishableKey": "{{ stripe_publishable_key }}"
-	},
-	"Web": {
+  },
+  "Web": {
     "Scheme": "{{ app_scheme }}",
     "Host": "{{ app_host }}",
-		"APIScheme": "{{ api_scheme }}",
-		"APIHost": "{{ api_host }}"
-	},
+    "APIScheme": "{{ api_scheme }}",
+    "APIHost": "{{ api_host }}"
+  },
   "IsDevelopment": false
 }
