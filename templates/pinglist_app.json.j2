@@ -1,7 +1,7 @@
 {
-	"Database": {
-		"Engine": "django.db.backends.postgresql_psycopg2",
-		"Host": "{{ database_host }}",
+  "Database": {
+    "Engine": "django.db.backends.postgresql_psycopg2",
+    "Host": "{{ database_host }}",
 		"Port": 5432,
 		"User": "pinglist_app",
 		"Password": "{{ app_database_password }}",
@@ -23,7 +23,7 @@
 	},
 	"Web": {
     "Scheme": "{{ app_scheme }}",
-    "Host": "{{ app_host }}"
+    "Host": "{{ app_host }}",
 		"APIScheme": "{{ api_scheme }}",
 		"APIHost": "{{ api_host }}"
 	},
