@@ -8,3 +8,5 @@ domain_name: "pingli.st"
 #database_host: "{{ groups[database_host_key][0] }}"
 database_host: "{{ deploy_env }}-rds.{{ domain_name }}"
 aws_region: "us-west-2"
+
+contact_email: "risoknop@gmail.com"
