@@ -8,6 +8,7 @@ domain_name: "pingli.st"
 #database_host: "{{ groups[database_host_key][0] }}"
 database_host: "{{ deploy_env }}-rds.{{ domain_name }}"
 aws_region: "us-west-2"
+aws_assets_bucket: "{{ deploy_env }}.pinglist.assets"
 
 ios_link: "https://itunes.apple.com/us/app/pinglist/id1114451352?ls=1&mt=8"
 contact_email: "risoknop@gmail.com"
