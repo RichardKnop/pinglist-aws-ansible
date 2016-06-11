@@ -154,8 +154,8 @@ database_max_open_conns: 5
 database_max_idle_conns: 5
 api_database_password: "database_password"
 app_database_password: "app_database_password"
-session_secret: "session_secret"
-django_secret: "session_secret"
+app_secret: "session_secret"
+app_static_storage: "django.contrib.staticfiles.storage.StaticFilesStorage"
 oauth_client_id: "oauth_client_id"
 oauth_secret: "oauth_secret"
 facebook_app_id: "facebook_app_id"

@@ -12,7 +12,8 @@
     "Secret": "{{ oauth_secret }}"
   },
   "Django": {
-    "Secret": "{{ django_secret }}"
+    "Secret": "{{ app_secret }}",
+    "StaticStorage": "{{ app_static_storage }}"
   },
   "AWS": {
     "Region": "{{ aws_region }}",
@@ -31,6 +32,8 @@
     "APIScheme": "{{ api_scheme }}",
     "APIHost": "{{ api_host }}"
   },
-  "IOSLink": "{{ ios_link }}",
+  "Pinglist": {
+    "IOSLink": "{{ ios_link }}"
+  },
   "IsDevelopment": {{ is_development | to_json }}
 }

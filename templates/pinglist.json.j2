@@ -14,12 +14,6 @@
     "RefreshTokenLifetime": 1209600,
     "AuthCodeLifetime": 3600
   },
-  "Session": {
-    "Secret": "{{ session_secret }}",
-    "Path": "/",
-    "MaxAge": 604800,
-    "HTTPOnly": true
-  },
   "AWS": {
     "Region": "{{ aws_region }}",
     "AssetsBucket": "{{ aws_assets_bucket }}",
@@ -42,9 +36,8 @@
     "AppHost": "{{ app_host }}"
   },
   "Pinglist": {
-    "PasswordResetLifetime": 604800
+    "PasswordResetLifetime": 604800,
+    "ContactEmail": "{{ contact_email }}"
   },
-  "IOSLink": "{{ ios_link }}",
-  "ContactEmail": "{{ contact_email }}",
   "IsDevelopment": {{ is_development | to_json }}
 }
