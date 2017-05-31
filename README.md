@@ -4,6 +4,12 @@
 
 Ansible manifests to configure the Pinglist platform.
 
+See also:
+- [pinglist-aws-terraform](https://github.com/RichardKnop/pinglist-aws-terraform)
+- [pinglist-api](https://github.com/RichardKnop/pinglist-api)
+- [pinglist-app](https://github.com/RichardKnop/pinglist-app)
+- [pinglist-ios-app](https://github.com/RichardKnop/pinglist-ios-app)
+
 # Index
 
 * [Pinglist AWS Ansible](#pinglist-aws-ansible)
